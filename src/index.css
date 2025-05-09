@@ -19,7 +19,7 @@ body {
 section {
   width: 100dvw;
 }
-
+/* stylelint-disable at-rule-no-unknown */
 @theme {
   --font-poppins: "Poppins", sans-serif;
   --font-sans: "Mona Sans", sans-serif;
@@ -323,7 +323,7 @@ section {
     }
   }
 }
-
+/* stylelint-enable at-rule-no-unknown */
 /* Hero text slider starts */
 .slide {
   display: inline-block;
@@ -334,7 +334,7 @@ section {
 .wrapper {
   display: flex;
   flex-direction: column;
-  animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+  animation: wordSlider 18s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
 }
 
 @keyframes wordSlider {

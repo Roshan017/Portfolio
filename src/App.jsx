@@ -1,4 +1,4 @@
-import Hero from "./Components/sections/Hero.jsx";
+import Hero from "./sections/Hero.jsx";
 const App = () => {
   return (
     <>
