@@ -1,5 +1,6 @@
 import React from "react";
 import * as THREE from "three";
+
 const HeroLight = () => {
   return (
     <>
@@ -13,15 +14,15 @@ const HeroLight = () => {
       />
 
       <spotLight
-        position={[3, 4, -1]}
-        penumbra={0.2}
-        intensity={30}
-        angle={0.1}
-        color={"gold"}
+        position={[1, 5, 5]}
+        penumbra={0.5}
+        intensity={120}
+        angle={0.2}
+        color={"white"}
       />
       <pointLight
         angle={0.3}
-        position={[-0.4, 0, 1.7]}
+        position={[-0.4, 0, 1.2]}
         intensity={20}
         color={"blue"}
         penumbra={0.4}
@@ -29,7 +30,7 @@ const HeroLight = () => {
       <primitive
         position={[1, 2, 4]}
         object={new THREE.RectAreaLight("blue", 8, 3, 2)}
-        intensity={10}
+        intensity={20}
         rotation={[-Math.PI / 4, Math.PI / 4, 0]}
       />
     </>

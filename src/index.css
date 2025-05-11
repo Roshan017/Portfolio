@@ -97,7 +97,7 @@ section {
   }
 
   .hero-badge {
-    @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
+    @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm  font-poppins md:text-base text-nowrap;
   }
 
   .hero-3d-layout {
@@ -120,11 +120,11 @@ section {
     }
 
     .logo {
-      @apply text-white-50 text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105;
+      @apply text-white-50 font-poppins text-xl md:text-3xl font-semibold transition-transform duration-300 hover:scale-112;
     }
 
     nav.desktop {
-      @apply hidden lg:flex items-center;
+      @apply hidden lg:flex items-center font-poppins text-xl;
 
       ul {
         @apply flex space-x-8;
@@ -136,7 +136,7 @@ section {
             @apply transition-colors duration-300 hover:text-white;
           }
 
-          .underline {
+          .underLine {
             @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full;
           }
         }
@@ -192,6 +192,10 @@ section {
 
       .image-wrapper {
         @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-0;
+      }
+
+      .video-wrapper {
+        @apply xl:h-[40vh] md:h-55 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-0;
       }
 
       img {
@@ -370,11 +374,12 @@ section {
   width: 2px;
   background: linear-gradient(
     0deg,
-    rgba(69, 222, 196, 0) 0%,
-    #62e0ff 25%,
-    #52aeff 37.51%,
-    #fd5c79 62.83%,
-    #6d45ce 92.91%
+    rgba(0, 255, 255, 0) 0%,
+    #00ffff 20%,
+    /* Neon Cyan */ #ff00ff 40%,
+    /* Neon Magenta */ #8a2be2 60%,
+    /* Electric Purple */ #ff007f 80%,
+    /* Hot Pink */ #00ffff 100% /* Back to Neon Cyan */
   );
 }
 
@@ -448,7 +453,7 @@ section {
     conic-gradient(
       from calc((var(--start) - 15) * 1deg),
       #ffffff1f 0deg,
-      white,
+      #e200ff,
       #ffffff00 100deg
     );
   mask-composite: intersect;
@@ -458,8 +463,8 @@ section {
 }
 
 .glow {
-  pointer-events: none;
   position: absolute;
+
   width: 100%;
   height: 100%;
   left: 50%;

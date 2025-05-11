@@ -6,6 +6,7 @@ import { Suspense } from "react";
 
 import { Scene } from "./Final";
 import HeroLight from "./HeroLight";
+import Particles from "./Particles";
 
 function HeroExp() {
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
@@ -14,18 +15,22 @@ function HeroExp() {
     <Canvas shadows camera={{ position: [0, 0, 15], fov: 45 }}>
       <Suspense fallback={null}>
         <HeroLight />
+        <Particles count={100} />
         <OrbitControls
-          enabledPan={false}
+          enablePan={false}
           enableZoom={!isTablet}
           maxDistance={20}
           minDistance={5}
           minPolarAngle={Math.PI / 5}
           maxPolarAngle={Math.PI / 2}
+          minAzimuthAngle={-Math.PI / 3} // Left limit
+          maxAzimuthAngle={Math.PI / 4} // Right limit
         />
+
         <group
-          rotation={[0, -Math.PI / 10, 0]}
-          scale={isMobile ? 0.7 : 1.7}
-          position={[0.7, -2.5, 0]}
+          rotation={[0, -Math.PI / 3.5, 0]}
+          scale={isMobile ? 1.85 : 2.5}
+          position={isMobile ? [2.1, -2.5, 0] : [2.45, -3, 0]}
         >
           <Scene />
         </group>
