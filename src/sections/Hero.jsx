@@ -4,6 +4,7 @@ import HeroExp from "../Components/HeroModels/HeroExp";
 import { words } from "../constants";
 import gsap from "gsap";
 import Counter from "../Components/Counter";
+import RotatingText from "../Components/RotateText";
 
 const Hero = () => {
   useGSAP(() => {
@@ -32,10 +33,33 @@ const Hero = () => {
       <div className="hero-layout">
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
           <div className="flex flex-col gap-7">
-            <div className="hero-text font-poppins">
+            <div className="hero-text font-poppins text-6xl">
               <h1>
                 Transforming
-                <span className="slide">
+                <span>
+                  <RotatingText
+                    texts={[
+                      "Ideas",
+                      "Designs",
+                      "Insights",
+                      "Concepts",
+                      "Ideas",
+                      "Designs",
+                      "Insights",
+                      "Concepts",
+                    ]}
+                    mainClassName=" text-white-50  bg-transparent  overflow-hidden rounded-lg"
+                    staggerFrom={"last"}
+                    initial={{ y: "100%" }}
+                    animate={{ y: 0 }}
+                    exit={{ y: "-120%" }}
+                    staggerDuration={0.025}
+                    splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                    transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                    rotationInterval={2300}
+                  />
+                </span>
+                {/*<span className="slide">
                   <span className="wrapper">
                     {words.map((word) => (
                       <span
@@ -52,13 +76,14 @@ const Hero = () => {
                       </span>
                     ))}
                   </span>
-                </span>
+                </span>*/}
               </h1>
               <h1>into Full-Stack Solutions</h1>
               <h1>Driven by Data and Code</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10 text-poppins">
-              Hellooo I'm Roshan
+              Hey, I’m <strong>Roshan</strong> – a fresher full-stack dev from
+              Kerala,
             </p>
             <Button
               text="See my Work"
