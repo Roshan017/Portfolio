@@ -3,6 +3,7 @@ import Feature from "./sections/Feature.jsx";
 import Hero from "./sections/Hero.jsx";
 import NavBar from "./sections/NavBar.jsx";
 import Projects from "./sections/Projects.jsx";
+import Tech from "./sections/Tech.jsx";
 const App = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const App = () => {
       <Projects />
       <Feature />
       <Exp />
+      <Tech />
     </>
   );
 };

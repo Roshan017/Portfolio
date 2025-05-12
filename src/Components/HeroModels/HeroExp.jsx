@@ -28,9 +28,9 @@ function HeroExp() {
         />
 
         <group
-          rotation={[0, -Math.PI / 3.5, 0]}
-          scale={isMobile ? 1.85 : 2.5}
-          position={isMobile ? [2.1, -3.65, 0] : [2.65, -3, 0]}
+          rotation={isMobile ? [-0, -Math.PI / 3.5, 0] : [0, -Math.PI / 3.5, 0]}
+          scale={isMobile ? 1.95 : 2.5}
+          position={isMobile ? [2.25, -4.45, 0] : [2.65, -3, 0]}
         >
           <Scene />
         </group>
