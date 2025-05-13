@@ -99,6 +99,37 @@ const techStackImgs = [
     imgPath: "/images/logos/git.svg",
   },
 ];
+const Certificates = [
+  {
+    name: "Google Data Analytics",
+    imgPath: "images/Cert/Google.png",
+  },
+  {
+    name: "Meta Frontend Developer",
+    imgPath: "images/Cert/Meta.png",
+  },
+  {
+    name: "React Js Mastery",
+    imgPath: "images/Cert/React.png",
+  },
+  {
+    name: "Python Mastery",
+    imgPath: "images/Cert/Python.png",
+  },
+  {
+    name: "Figma Designer",
+    imgPath: "images/Cert/Figma.png",
+  },
+  {
+    name: "Data Science and ML",
+    imgPath: "images/Cert/Data.png",
+  },
+  /*
+  {
+    name: "Accenture Job Simulation",
+    imgPath: "images/Cert/Accenture.png",
+  },*/
+];
 
 const techStackIcons = [
   {
@@ -267,4 +298,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  Certificates,
 };

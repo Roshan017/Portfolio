@@ -56,7 +56,11 @@ const Exp = () => {
       className="w-full md:mt-40 mt-20 section-padding xl:px-0 font-poppins"
     >
       <div className="w-full h-full md:px-20 px-5">
-        <Header title="Proffesional Work Experience" sub="My Journey 📈" />
+        <Header
+          title="Proffesional Work Experience"
+          sub="My Journey"
+          emoji={"🚀"}
+        />
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card, index) => (

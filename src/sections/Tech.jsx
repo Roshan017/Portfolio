@@ -30,8 +30,9 @@ const Tech = () => {
     <div id="skills" className="flex-center section-padding font-poppins">
       <div className="w-full h-full md:px-10 px-5">
         <Header
-          title="Preffered Tech Stack"
-          sub="Technologies I've worked with 💻"
+          title="Prefered Tech Stack"
+          sub="Technologies I've worked with"
+          emoji={"💻"}
         />
         <div className="tech-grid">
           {techStackIcons.map((icon) => (

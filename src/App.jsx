@@ -1,3 +1,5 @@
+import Certifications from "./sections/Certifications.jsx";
+import Contact from "./sections/Contact.jsx";
 import Exp from "./sections/Exp.jsx";
 import Feature from "./sections/Feature.jsx";
 import Hero from "./sections/Hero.jsx";
@@ -13,6 +15,8 @@ const App = () => {
       <Feature />
       <Exp />
       <Tech />
+      <Certifications />
+      <Contact />
     </>
   );
 };

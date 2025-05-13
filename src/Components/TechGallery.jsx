@@ -371,8 +371,7 @@ class App {
         text: "Java",
       },
       {
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+        image: "/Skills_Imgs/Javascript.jpg",
         text: "JavaScript",
       },
 
@@ -396,6 +395,11 @@ class App {
       },
       {
         image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoJ3p4FivDqCZTB1-DsPtRekb0QAUqt_chfw&s",
+        text: "Three JS",
+      },
+      {
+        image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLqJK4zR_ma7L4d9RZhKIyVaaTvKuB6ps_wA&s",
         text: "R",
       },
@@ -413,6 +417,10 @@ class App {
         image:
           "data:image/png;base64,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",
         text: "Chakra UI",
+      },
+      {
+        image: "/Skills_Imgs/Shad.png",
+        text: "Shadcn UI",
       },
       {
         image:
@@ -434,11 +442,7 @@ class App {
           "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg",
         text: "Vite",
       },
-      {
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGGT_pnMHJdps9fGjcDaFSqcfFxO2E7BQk4g&s",
-        text: "MySQL",
-      },
+
       {
         image: "/Skills_Imgs/MongoDb.png",
         text: "MongoDB",
