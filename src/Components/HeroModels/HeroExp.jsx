@@ -5,6 +5,7 @@ import { useMediaQuery } from "react-responsive";
 import { Suspense } from "react";
 
 import { Scene } from "./Final";
+import { Model } from "./Compressed";
 import HeroLight from "./HeroLight";
 import Particles from "./Particles";
 
@@ -32,7 +33,7 @@ function HeroExp() {
           scale={isMobile ? 1.95 : 2.5}
           position={isMobile ? [2.25, -4.45, 0] : [2.65, -3, 0]}
         >
-          <Scene />
+          <Model />
         </group>
       </Suspense>
     </Canvas>
