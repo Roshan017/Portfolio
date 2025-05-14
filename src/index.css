@@ -322,14 +322,14 @@ form {
   }
 
   p {
-    @apply text-center md:text-start cursor-pointer;
+    @apply cursor-pointer;
   }
 
   .socials {
     @apply flex items-center justify-center gap-5;
 
     .icon {
-      @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl xl:size-16 md:size-14 cursor-pointer transition-all duration-500 hover:bg-black-50;
+      @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-lg xl:size-16 md:size-14 cursor-pointer transition-all duration-500 hover:bg-black-50;
     }
 
     img {

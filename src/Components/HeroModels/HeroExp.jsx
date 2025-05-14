@@ -1,17 +1,16 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
-
+import { useGLTF } from "@react-three/drei";
 import { Suspense } from "react";
 
-import { Scene } from "./Final";
-import { Model } from "./Compressed";
 import HeroLight from "./HeroLight";
 import Particles from "./Particles";
 
 function HeroExp() {
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const New = useGLTF("/models/New-transformed.glb");
   return (
     <Canvas shadows camera={{ position: [0, 0, 15], fov: 45 }}>
       <Suspense fallback={null}>
@@ -33,7 +32,7 @@ function HeroExp() {
           scale={isMobile ? 1.95 : 2.5}
           position={isMobile ? [2.25, -4.45, 0] : [2.65, -3, 0]}
         >
-          <Model />
+          <primitive object={New.scene} />
         </group>
       </Suspense>
     </Canvas>

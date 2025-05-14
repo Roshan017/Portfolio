@@ -30,7 +30,7 @@ const Tech = () => {
     <div id="skills" className="flex-center section-padding font-poppins">
       <div className="w-full h-full md:px-10 px-5">
         <Header
-          title="Prefered Tech Stack"
+          title="Preferred Tech Stack"
           sub="Technologies I've worked with"
           emoji={"💻"}
         />
@@ -53,7 +53,7 @@ const Tech = () => {
           ))}
         </div>
         <div className="mt-10 flex-center flex flex-col">
-          <Header className="mt-10" title="Skills I Know" />
+          <Header className="mt-10" title="Tech I have worked with" />
 
           <div style={{ width: "100%", height: "350px", position: "relative" }}>
             <CircularGallery

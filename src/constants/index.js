@@ -17,10 +17,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 5, suffix: "+", label: "Years of Coding Experience" },
+  { value: 4, suffix: "+", label: "Years of Coding Experience" },
   { value: 15, suffix: "+", label: "Certifications Earned" },
   { value: 10, suffix: "+", label: "Completed Projects" },
-  { value: 5, suffix: "+", label: "Internships & Trainings Completed" },
+  { value: 3, suffix: "+", label: "Internships & Trainings Completed" },
 ];
 
 const logoIconsList = [

@@ -1,19 +1,22 @@
 import React from "react";
 import { socialImgs } from "../constants";
-import { div } from "framer-motion/client";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="footer-container mt-4">
         <div className="flex flex-col justify-center">
-          <p>Terms & Conditions</p>
+          <p className="text-center md:text-start">Terms & Conditions</p>
         </div>
         <div className="socials">
           {socialImgs.map((s) => (
             <div key={s.name} className="icon">
               <a target="_blank" key={s.name} href={s.link}>
-                <img src={s.imgPath} alt={s.name} />
+                <img
+                  className="w-6 h-6 md:w-8 md:h-8"
+                  src={s.imgPath}
+                  alt={s.name}
+                />
               </a>
             </div>
           ))}

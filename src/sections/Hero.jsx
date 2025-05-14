@@ -81,9 +81,9 @@ const Hero = () => {
               <h1>into Full-Stack Solutions</h1>
               <h1>Driven by Data and Code</h1>
             </div>
-            <p className="text-white-50 md:text-xl relative z-10 text-poppins">
+            <p className="text-white-50 md:text-xl relative z-10 text-poppins px-3 bg-black rounded-4xl w-fit">
               Hey, I’m <strong>Roshan</strong> – a fresher full-stack dev from
-              Kerala,
+              Kerala
             </p>
             <Button
               text="See My Work"

@@ -54,7 +54,7 @@ const Exp = () => {
     >
       <div className="w-full h-full md:px-20 px-5">
         <Header
-          title="Proffesional Work Experience"
+          title="Professional Work Experience"
           sub="My Journey"
           emoji={"🚀"}
         />
