@@ -36,17 +36,14 @@ const Exp = () => {
     });
 
     gsap.to(".timeline", {
+      scaleY: 0,
       transformOrigin: "bottom bottom",
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: ".timeline",
         start: "top center",
         end: "70% center",
-        onUpdate: (s) => {
-          gsap.to(".timeline", {
-            scaleY: 1 - s.progress,
-          });
-        },
+        scrub: true, // replaces the onUpdate hack
       },
     });
   }, []);

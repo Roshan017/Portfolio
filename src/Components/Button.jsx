@@ -4,12 +4,17 @@ const Button = ({ text, className, id }) => {
       onClick={(e) => {
         e.preventDefault();
 
-        const target = document.getElementById("counter");
+        const target = document.getElementById(id);
 
-        if (target && id) {
+        if (!target) {
+          console.log("target not found");
+        }
+
+        if (target) {
+          console.log("Found", target);
           const offset = window.innerHeight * 0.15;
           const top =
-            target.getBoundingClientRect().top + window.scrollY - offset;
+            target.getBoundingClientRect().top + window.pageYOffset - offset;
 
           window.scrollTo({
             top,

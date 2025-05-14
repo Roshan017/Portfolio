@@ -271,18 +271,23 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    link: "https://www.instagram.com/el_d_iablo07?igsh=MXUydnhheWVmNmtnZQ==",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
+    name: "github",
+    imgPath: "/images/github.png",
+    link: "https://github.com/Roshan017",
   },
+
   {
     name: "x",
     imgPath: "/images/x.png",
+    link: "https://x.com/RoshanPMath",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/roshan-mathew2104/",
   },
 ];
 

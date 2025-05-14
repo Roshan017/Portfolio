@@ -45,7 +45,7 @@ const Projects = () => {
               <img src="/images/TribeSpace.png" alt="TribeSpace" />
             </div>
             <div className="text-content">
-              <h2>
+              <h2 className="text-white">
                 Snap. Share. Inspire – That’s{" "}
                 <span className=" text-violet-400">TribeSpace</span>.
               </h2>

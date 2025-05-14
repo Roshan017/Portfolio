@@ -10,7 +10,7 @@ const Tech_icon = ({ model }) => {
       <directionalLight position={[0, 0, 4]} intensity={0.6} />
       <OrbitControls enableZoom={false} />
       <Environment preset="city" />
-      <Float speed={5.5} rotationIntensity={1.2} floatIntensity={2}>
+      <Float speed={5.5} rotationIntensity={1.3} floatIntensity={2}>
         <group scale={model.scale}>
           <primitive object={scene.scene} rotation={model.rotation} />
         </group>

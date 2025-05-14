@@ -39,7 +39,7 @@ const Contact = () => {
   };
   return (
     <section id="contact" className=" flex-center section-padding">
-      <div className="w-full h-50 md:px-10 px-5 ">
+      <div className="w-full h-full md:px-10 px-5 ">
         <Header
           title={"Contact Me"}
           sub={"Get in touch with me"}
