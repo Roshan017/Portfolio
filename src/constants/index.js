@@ -103,26 +103,33 @@ const Certificates = [
   {
     name: "Google Data Analytics",
     imgPath: "images/Cert/Google.png",
+    link: "https://www.coursera.org/account/accomplishments/professional-cert/1AGNAEPOSZGV",
   },
   {
     name: "Meta Frontend Developer",
     imgPath: "images/Cert/Meta.png",
+    link: "https://www.coursera.org/account/accomplishments/professional-cert/1AGNAEPOSZGV",
+  },
+  {
+    name: "AWS Cloud Technology Consultant",
+    imgPath: "images/Cert/AWS.png",
+    link: "https://www.coursera.org/account/accomplishments/professional-cert/XBEV0CTUWCW4",
   },
   {
     name: "React Js Mastery",
     imgPath: "images/Cert/React.png",
+    link: "https://www.udemy.com/certificate/UC-c2a64332-bc1a-4d84-9e52-38acd401873f/",
   },
   {
     name: "Python Mastery",
     imgPath: "images/Cert/Python.png",
+    link: "https://www.udemy.com/certificate/UC-2c561785-81b7-4266-8b6e-e90627f4138e/",
   },
-  {
-    name: "Figma Designer",
-    imgPath: "images/Cert/Figma.png",
-  },
+  
   {
     name: "Data Science and ML",
     imgPath: "images/Cert/Data.png",
+    link: "https://www.udemy.com/certificate/UC-1a1684be-83e6-4099-b798-8f499c2eecfb/",
   },
   /*
   {

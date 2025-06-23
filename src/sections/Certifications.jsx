@@ -35,7 +35,8 @@ const Certifications = () => {
       <div className="certificate-Wrapper">
         {Certificates.map((c) => (
           <div key={c.name} className="certificate-card">
-            <img src={c.imgPath} alt={c.name} />
+            <a target="_blank" href={c.link}><img src={c.imgPath} alt={c.name} /></a>
+            
             <p className="text-white-50 font-semibold mt-5 text-xl ">
               {c.name}
             </p>
