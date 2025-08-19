@@ -1,5 +1,3 @@
-import { link, title } from "framer-motion/client";
-
 const navLinks = [
   { id: 1, name: "Work", link: "#work" },
   { id: 2, name: "Experience", link: "#experience" },
