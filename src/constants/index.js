@@ -1,3 +1,5 @@
+import { link, title } from "framer-motion/client";
+
 const navLinks = [
   { id: 1, name: "Work", link: "#work" },
   { id: 2, name: "Experience", link: "#experience" },
@@ -21,6 +23,44 @@ const counterItems = [
   { value: 15, suffix: "+", label: "Certifications Earned" },
   { value: 10, suffix: "+", label: "Completed Projects" },
   { value: 3, suffix: "+", label: "Internships & Trainings Completed" },
+];
+
+const ExtraProject = [
+  {
+    title: "Agrivision",
+    link: "https://github.com/Roshan017/Agrivision_Main",
+    desc: "An AI-powered farming assistant featuring crop recommendation, yield prediction, plant disease detection, and market insights to help farmers maximize productivity and profit.",
+  },
+  {
+    title: "AI Quiz Game",
+    link: "https://github.com/Roshan017/AI_Quiz_Game",
+    desc: "An interactive quiz game that leverages AI to generate questions, evaluate responses, and provide an engaging, adaptive learning experience.",
+  },
+  {
+    title: "MSN",
+    link: "https://github.com/Roshan017/MSN_QVETO",
+    desc: "A news application that delivers the latest updates across categories like world, business, sports, and technology with a clean and responsive interface.",
+  },
+  {
+    title: "ModFit",
+    link: "https://github.com/Roshan017/ModFit",
+    desc: "A fitness tracker web app that monitors exercises, calculates calories burned, and provides personalized workout recommendations with blogs and guidance.",
+  },
+  {
+    title: "Learning Platform",
+    link: "https://github.com/Roshan017/Learning-Platform",
+    desc: "An online education platform designed to provide structured learning paths, interactive modules, and resources for students and professionals.",
+  },
+  {
+    title: "Schedula",
+    link: "https://github.com/PearlThoughtsInternship/Team-Visionaries",
+    desc: "An appointment booking platform that simplifies scheduling for businesses and individuals, ensuring seamless time management and client coordination.",
+  },
+  {
+    title: "Little Lemon",
+    link: "https://github.com/Roshan017/LittleLemon",
+    desc: "A restaurant website prototype built with React, featuring table reservations, menu exploration, and a smooth user experience aligned with modern UI/UX practices.",
+  },
 ];
 
 const logoIconsList = [
@@ -125,7 +165,7 @@ const Certificates = [
     imgPath: "images/Cert/Python.png",
     link: "https://www.udemy.com/certificate/UC-2c561785-81b7-4266-8b6e-e90627f4138e/",
   },
-  
+
   {
     name: "Data Science and ML",
     imgPath: "images/Cert/Data.png",
@@ -311,4 +351,5 @@ export {
   techStackImgs,
   navLinks,
   Certificates,
+  ExtraProject,
 };

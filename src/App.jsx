@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Loader from "./Components/Loader.jsx";
 import Certifications from "./sections/Certifications.jsx";
 import Contact from "./sections/Contact.jsx";
@@ -9,6 +11,7 @@ import Hero from "./sections/Hero.jsx";
 import NavBar from "./sections/NavBar.jsx";
 import Projects from "./sections/Projects.jsx";
 import Tech from "./sections/Tech.jsx";
+import ExtraProjects from "./sections/ExtraProjects.jsx";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,23 +40,34 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <Router>
       {isLoading ? (
         <Loader />
       ) : (
-        <>
-          <NavBar />
-          <Hero />
-          <Projects />
-          <Feature />
-          <Exp />
-          <Tech />
-          <Certifications />
-          <Contact />
-          <Footer />
-        </>
+        <Routes>
+          {/* Main Home Page */}
+          <Route
+            path="/"
+            element={
+              <>
+                <NavBar />
+                <Hero />
+                <Projects />
+                <Feature />
+                <Exp />
+                <Tech />
+                <Certifications />
+                <Contact />
+                <Footer />
+              </>
+            }
+          />
+
+          {/* Extra Projects Page */}
+          <Route path="/projects" element={<ExtraProjects />} />
+        </Routes>
       )}
-    </>
+    </Router>
   );
 };
 

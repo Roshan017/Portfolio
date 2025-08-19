@@ -365,6 +365,7 @@ class App {
           "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png",
         text: "C",
       },
+
       {
         image:
           "https://static.vecteezy.com/system/resources/previews/048/332/150/non_2x/java-programming-language-java-logo-free-png.png",
@@ -388,6 +389,11 @@ class App {
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1I3OubNV7mVCMcnxQM5i-Kg04VEAulwc_Kg&s",
         text: "TypeScript",
+      },
+      {
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9uzErWz9EXqZDxZ5lP9aYpMz8eK6rr5X3w&s",
+        text: "NextJs",
       },
       {
         image: "/Skills_Imgs/express-js.png",

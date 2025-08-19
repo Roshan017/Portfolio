@@ -56,7 +56,7 @@ const Projects = () => {
                 and save images, fostering engagement through visual expression.
                 <a
                   target="_blank"
-                  className="font-semibold text-violet-400 underline"
+                  className="font-semibold text-violet-400 underline ml-2"
                   href="https://tribespace.netlify.app/"
                 >
                   Check it Out
@@ -64,6 +64,7 @@ const Projects = () => {
               </p>
             </div>
           </div>
+
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={Project2}>
               <div className="video-wrapper">
@@ -95,25 +96,31 @@ const Projects = () => {
             </div>
             <div className="project" ref={Project3}>
               <div className="image-wrapper ">
-                <img src="/images/Agri.png" alt="Agrivision" />
+                <img src="/images/ForkCast Logo.png" alt="ForkCast" />
               </div>
 
               <h2>
-                <span className="text-green-600">AGRIVISION</span> : Cultivating
-                Smart Farming
+                <span className="text-green-600">FORKCAST</span> : Smarter Meal
+                Planning
               </h2>
               <p className="text-white-50 md:text-xl">
-                Built with Chakra UI and ML to recommend crops, predict yield,
-                and detect plant diseases
+                A personalized meal planning web app built with React,
+                Tailwind,ThreeJs and Python — helping users discover recipes,
+                organize meals, and track nutrition effortlessly.{" "}
                 <a
                   target="_blank"
                   className="font-semibold text-green-600 underline"
-                  href="https://github.com/Roshan017/Agrivision_Main"
+                  href="https://forkcast1.netlify.app/"
                 >
-                  [repo]
+                  Check it Out
                 </a>
               </p>
             </div>
+            <p>
+              <a href="/projects" className="text-white cursor-pointer">
+                More Projects -&gt;
+              </a>
+            </p>
           </div>
         </div>
       </div>
