@@ -3,6 +3,8 @@ import Header from "../Components/Header";
 import { techStackIcons } from "../constants";
 import Tech_icon from "../Components/Models/Icons/Tech_icon";
 import { gsap } from "gsap";
+import { Suspense } from "react";
+
 import { useGSAP } from "@gsap/react";
 
 const Tech = () => {
@@ -43,15 +45,19 @@ const Tech = () => {
               <div className="tech-card-animated-bg" />
               <div className="tech-card-content">
                 <div className="tech-icon-wrapper">
-                  <Tech_icon model={icon} />
+                  <Suspense fallback={<div className="h-24" />}>
+                    <Tech_icon model={icon} />
+                  </Suspense>
                 </div>
-                <div className="padding-x w-full ">
+
+                <div className="padding-x w-full">
                   <p>{icon.name}</p>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
         <div className="mt-10 flex-center flex flex-col">
           <Header className="mt-10" title="Tech I have worked with" />
 

@@ -1,20 +1,17 @@
-import { Environment, Float, OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import { useMediaQuery } from "react-responsive";
+
+import TechIconScene from "./TechIconScene";
 
 const Tech_icon = ({ model }) => {
-  const scene = useGLTF(model.modelPath);
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
-    <Canvas>
-      <ambientLight intensity={0.3} />
-      <directionalLight position={[0, 0, 4]} intensity={0.6} />
-      <OrbitControls enableZoom={false} />
-      <Environment preset="city" />
-      <Float speed={5.5} rotationIntensity={1.3} floatIntensity={2}>
-        <group scale={model.scale}>
-          <primitive object={scene.scene} rotation={model.rotation} />
-        </group>
-      </Float>
+    <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 6], fov: 50 }}>
+      <Suspense fallback={null}>
+        <TechIconScene model={model} isMobile={isMobile} />
+      </Suspense>
     </Canvas>
   );
 };

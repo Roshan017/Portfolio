@@ -213,6 +213,20 @@ const techStackIcons = [
 const expCards = [
   {
     id: 1,
+    desc: "Gained hands-on full-stack development experience at Techversant, working on real-world web applications, AI-assisted features, and structured SDLC-based workflows.",
+    imgPath: "/images/Techversant.png",
+    logoPath: "/images/Techversant_logo.png",
+    title: "Associate Software Developer",
+    date: "September 2025 – Ongoing",
+    responsibilities: [
+      "Contributed to full-stack web applications, building responsive front-end components and integrating backend APIs.",
+      "Worked with modern technologies including  Langgraph, Node, and databases while gaining exposure to AI-driven features.",
+      "Followed SDLC practices such as requirement analysis, development, testing, and version control using Git and GitHub.",
+    ],
+  },
+
+  {
+    id: 2,
     desc: "Worked on real-world backend development at TGH Technologies using Node.js, enhancing backend functionality and collaborating with the dev team.",
     imgPath: "/images/Tgh_TEch.png",
     logoPath: "/images/TGH_Logo.png",
@@ -225,7 +239,7 @@ const expCards = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     desc: "Developed mobile apps at Techmaghi with React Native, focusing on cross-platform UI development, component structuring, and design best practices.",
     imgPath: "/images/Techmaghi.png",
     logoPath: "/images/TechMaghi_logo.webp",
@@ -235,19 +249,6 @@ const expCards = [
       "Learned the basics of mobile development using React Native.",
       "Built simple cross-platform mobile interfaces using JSX and React components.",
       "Participated in hands-on sessions to design and test UI components.",
-    ],
-  },
-  {
-    id: 3,
-    desc: "Gained hands-on web development experience at Immensphere, building responsive interfaces and exploring modern workflows.",
-    imgPath: "/images/Immensphere.png",
-    logoPath: "/images/Immensphere_Logo.png",
-    title: "Web Developer Intern",
-    date: "September 2022 – November 2022",
-    responsibilities: [
-      "Learned to build responsive web pages using HTML, CSS, and JavaScript",
-      "Explored front-end development with React.js and gained exposure to component-based design.",
-      "Practiced version control using Git and GitHub for managing code and collaborating on tasks.",
     ],
   },
 ];

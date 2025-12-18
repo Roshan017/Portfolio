@@ -8,6 +8,7 @@ import {
   Program,
   Texture,
 } from "ogl";
+import { image } from "framer-motion/client";
 
 function debounce(func, wait) {
   let timeout;
@@ -394,6 +395,11 @@ class App {
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9uzErWz9EXqZDxZ5lP9aYpMz8eK6rr5X3w&s",
         text: "NextJs",
+      },
+      {
+        image:
+          "https://imagedelivery.net/-IT6z0z0Ec5yEiYj3DvVjg/374d5c915b0796e2a823ac9a010fdeacff51d899/public",
+        text: "Langgraph",
       },
       {
         image: "/Skills_Imgs/express-js.png",
