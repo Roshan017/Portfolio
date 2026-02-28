@@ -1,5 +1,11 @@
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Html, useGLTF } from "@react-three/drei";
+import {
+  OrbitControls,
+  Html,
+  useGLTF,
+  AdaptiveDpr,
+  AdaptiveEvents,
+} from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { Suspense } from "react";
 
@@ -15,7 +21,14 @@ function HeroExp() {
   const model = useGLTF("/models/New-transformed.glb");
 
   return (
-    <Canvas shadows dpr={[1, 1.5]} camera={{ position: [0, 0, 15], fov: 45 }}>
+    <Canvas
+      shadows
+      dpr={[1, Math.min(window.devicePixelRatio, 2)]}
+      camera={{ position: [0, 0, 15], fov: 45 }}
+      style={{ touchAction: "none", pointerEvents: isMobile ? "none" : "auto" }}
+    >
+      <AdaptiveDpr pixelated />
+      <AdaptiveEvents />
       <Suspense fallback={<Html center>Loading...</Html>}>
         <HeroLight />
 
